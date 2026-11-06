@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="be">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лічбавая бібліятэка — Педагагічная кухня</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <!-- Шапка -->
+        <header class="top">
+            <div class="name">
+                <a href="index.html" class="brand-link">
+                    <div class="brand">
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c56a4b"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z">
+                                </path>
+                                <line x1="6" y1="17" x2="18" y2="17"></line>
+                            </svg>
+                        </div>
+                        <div class="title-block">
+                            <h1 class="main-title">Педагагічная <span class="red">кухня</span></h1>
+                            <p class="subtitle">шэф-повар — Лойша Таццяна Віктараўна</p>
+                        </div>
+                    </div>
+                </a>
+
+                <nav class="links">
+                    <a href="index.html">Галоўная</a>
+                    <a href="biography.html">Біяграфія</a>
+                    <a href="achieve.html">Дасягненні</a>
+                    <a href="nakirunki.html">Шэф-повар унiверсал</a>
+                    <a href="students.html">Гонар шэф-повара</a>
+                    <a href="library.html" class="active">Палiцы рэцэптаў</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Асноўны кантэнт бібліятэкі -->
+        <main class="library-main">
+
+            <div class="library-header">
+                <span class="library-badge">ПАЛIЦЫ РЭЦЭПТАЎ</span>
+                <h1 class="library-title">Лічбавая бібліятэка</h1>
+                <p class="library-desc">«Кухня» шэфа ніколі не была закрытай: яе рэцэпты выходзілі ў часопісах «Роднае
+                    слова» і «Адукацыя і выхаванне», а цяпер тут сабраны метадычныя распрацоўкі — базавыя тэхнікі,
+                    артыкулы — гастранамічныя нататкi, рабочыя матэрыялы — загатоўкі і відэаўрокі — майстар-класы
+                    адкрытай кухні.</p>
+            </div>
+
+            <!-- ПЛАШКА З 100 ВІДЭА -->
+            <div class="video-banner" id="open100Videos">
+                <div class="video-banner-content">
+                    <h2 class="video-banner-title">Цыкл «100 пытанняў настаўніку»</h2>
+                    <p class="video-banner-desc">Націсніце, каб паглядзець усе 100 відэа</p>
+                </div>
+                <div class="video-banner-play">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- ПЛАШКА З АРТЫКУЛАМІ -->
+            <div class="video-banner" id="openArticles" style="margin-top: -1.5rem;">
+                <div class="video-banner-content">
+                    <h2 class="video-banner-title">Артыкулы</h2>
+                    <p class="video-banner-desc">Націсніце, каб спампаваць публікацыі</p>
+                </div>
+                <div class="video-banner-play">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- ПЛАШКА: РЫХТУЕМСЯ ДА АЛІМПІЯДЫ -->
+            <div class="video-banner" id="openOlympiad" style="margin-top: -1.5rem;">
+                <div class="video-banner-content">
+                    <h2 class="video-banner-title">Рыхтуемся да алімпіяды. 7 клас</h2>
+                    <p class="video-banner-desc">Націсніце, каб паглядзець змест дапаможніка</p>
+                </div>
+                <div class="video-banner-play">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- ПЛАШКА ДЛЯ НОВОГО ОКНА (КЛАСНАЕ КІРАЎНІЦТВА) -->
+            <div class="video-banner" id="openNewBanner" style="margin-top: -1.5rem;">
+                <div class="video-banner-content">
+                    <h2 class="video-banner-title">Класнае кiраўнiцтва</h2>
+                    <p class="video-banner-desc">Націсніце, каб паглядзець падрабязнасці</p>
+                </div>
+                <div class="video-banner-play">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- ПЛАШКА: МЕТАДЫЧНЫЯ РАСПРАЦОЎКІ -->
+            <div class="video-banner" id="openMethodics" style="margin-top: -1.5rem;">
+                <div class="video-banner-content">
+                    <h2 class="video-banner-title">Метадычныя распрацоўкі</h2>
+                    <p class="video-banner-desc">Націсніце, каб спампаваць матэрыялы</p>
+                </div>
+                <div class="video-banner-play">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- НОВАЯ ПЛАШКА: ПЛАНЫ-КАНСПЕКТЫ ЎРОКАЎ -->
+            <div class="video-banner" id="openLessonPlans" style="margin-top: -1.5rem;">
+                <div class="video-banner-content">
+                    <h2 class="video-banner-title">Планы-канспекты ўрокаў</h2>
+                    <p class="video-banner-desc">Націсніце, каб спампаваць распрацоўкі ўрокаў</p>
+                </div>
+                <div class="video-banner-play">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        <line x1="8" y1="7" x2="16" y2="7"></line>
+                        <line x1="8" y1="11" x2="16" y2="11"></line>
+                        <line x1="8" y1="15" x2="12" y2="15"></line>
+                    </svg>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- АСНОЎНАЕ МАДАЛЬНАЕ АКНО: ГАЛЕРЭЯ 100 ВІДЭА -->
+    <div class="video-modal gallery-modal" id="galleryModal">
+        <div class="gallery-modal-content">
+            <button class="close-video" id="closeGalleryBtn">&times;</button>
+            <h3 class="modal-title" style="padding: 20px 0 0;">Цыкл «100 пытанняў настаўніку»</h3>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Сюды JS згенерыруе 100 картак -->
+            </div>
+        </div>
+    </div>
+
+    <!-- НОВАЕ МАДАЛЬНАЕ АКНО ДЛЯ АРТЫКУЛАЎ -->
+    <div class="video-modal" id="articlesModal" style="background-color: rgba(43, 26, 18, 0.85);">
+        <div class="gallery-modal-content" style="max-width: 900px; background-color: #f4efe6; padding: 30px;">
+            <button class="close-video" id="closeArticlesBtn" style="top: 15px; right: 15px;">&times;</button>
+            <h3 class="modal-title" style="font-size: 1.8rem; margin-top: 0; margin-bottom: 20px; text-align: left;">
+                Артыкулы і распрацоўкі</h3>
+
+            <div class="articles-list"
+                style="display: flex; flex-direction: column; gap: 15px; max-height: 70vh; overflow-y: auto; padding-right: 10px;">
+                <!-- Файл 1 -->
+                <div class="article-item"
+                    style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Комплексная работа: Беларуская мова і літаратура (VI клас)</h4>
+                        <p style="margin: 0; font-size: 0.85rem; color: #7a6b61; font-family: 'Montserrat', sans-serif;">
+                            Алімпіядныя заданні і адказы</p>
+                    </div>
+                    <div><a href="files/1.docx" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+                <!-- Файл 2 -->
+                <div class="article-item"
+                    style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Духоўна-маральнае выхаванне вучняў</h4>
+                        <p style="margin: 0; font-size: 0.85rem; color: #7a6b61; font-family: 'Montserrat', sans-serif;">
+                            Праз падрыхтоўку да алімпіяды</p>
+                    </div>
+                    <div><a href="files/2.docx" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+                <!-- Файл 3 -->
+                <div class="article-item"
+                    style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Падрыхтоўка да алімпіяды (5 клас)</h4>
+                        <p style="margin: 0; font-size: 0.85rem; color: #7a6b61; font-family: 'Montserrat', sans-serif;">
+                            Рабочы ліст і тэксты</p>
+                    </div>
+                    <div><a href="files/3.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+                <!-- Файл 4 -->
+                <div class="article-item"
+                    style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Рабочы ліст па падрыхтоўцы да алімпіяды (5 клас)</h4>
+                        <p style="margin: 0; font-size: 0.85rem; color: #7a6b61; font-family: 'Montserrat', sans-serif;">
+                            Заданні і тэорыя</p>
+                    </div>
+                    <div><a href="files/4.docx" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+                <!-- Файл 5 -->
+                <div class="article-item"
+                    style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Рабочы ліст па падрыхтоўцы да алімпіяды (7 клас)</h4>
+                        <p style="margin: 0; font-size: 0.85rem; color: #7a6b61; font-family: 'Montserrat', sans-serif;">
+                            Тэксты і алімпіядныя заданні</p>
+                    </div>
+                    <div><a href="files/5.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+                <!-- Файл 6 -->
+                <div class="article-item"
+                    style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Тэсты па тэме "Арфаграфія" (Частка 2)</h4>
+                        <p style="margin: 0; font-size: 0.85rem; color: #7a6b61; font-family: 'Montserrat', sans-serif;">
+                            Падрыхтоўка да ЦЭ</p>
+                    </div>
+                    <div><a href="files/6.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+                <!-- Файл 7 -->
+                <div class="article-item"
+                    style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Тэсты па тэме "Арфаграфія" (Частка 1)</h4>
+                        <p style="margin: 0; font-size: 0.85rem; color: #7a6b61; font-family: 'Montserrat', sans-serif;">
+                            Падрыхтоўка да ЦЭ</p>
+                    </div>
+                    <div><a href="files/7.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+                <!-- Файл 8 -->
+                <div class="article-item"
+                    style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            ЦЭ. Марфалогія: Назоўнік. Прыметнік</h4>
+                        <p style="margin: 0; font-size: 0.85rem; color: #7a6b61; font-family: 'Montserrat', sans-serif;">
+                            Тэсты для падрыхтоўкі</p>
+                    </div>
+                    <div><a href="files/8.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+                <!-- Файл 9 -->
+                <div class="article-item"
+                    style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Сінтаксіс і пунктуацыя (Частка 1)</h4>
+                        <p style="margin: 0; font-size: 0.85rem; color: #7a6b61; font-family: 'Montserrat', sans-serif;">
+                            Тэсты для падрыхтоўкі да ЦЭ</p>
+                    </div>
+                    <div><a href="files/9.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+                <!-- Файл 10 -->
+                <div class="article-item"
+                    style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Сінтаксіс і пунктуацыя (Поўны курс)</h4>
+                        <p style="margin: 0; font-size: 0.85rem; color: #7a6b61; font-family: 'Montserrat', sans-serif;">
+                            Шэсць тэстаў для падрыхтоўкі</p>
+                    </div>
+                    <div><a href="files/10.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- МАДАЛЬНАЕ АКНО: СЛАЙДЭР "РЫХТУЕМСЯ ДА АЛІМПІЯДЫ" -->
+    <div class="video-modal" id="olympiadModal" style="background-color: rgba(43, 26, 18, 0.9);">
+        <div class="gallery-modal-content" style="max-width: 900px; background-color: #f4efe6; padding: 20px;">
+            <button class="close-video" id="closeOlympiadBtn" style="top: 15px; right: 15px;">&times;</button>
+            <h3 class="modal-title" style="padding: 10px 0 0;">Рыхтуемся да алімпіяды. 7 клас</h3>
+
+            <div class="achieve-slider" id="olympiadSlider"
+                style="max-width: 100%; margin: 20px auto 0; aspect-ratio: 4 / 3;">
+                <div class="achieve-slider-track" id="olympiadSliderTrack">
+                    <div class="achieve-slide"><img src="img/Слайд1.JPG" alt="Фота 1"></div>
+                    <div class="achieve-slide"><img src="img/Слайд2.JPG" alt="Фота 2"></div>
+                    <div class="achieve-slide"><img src="img/Слайд3.JPG" alt="Фота 3"></div>
+                    <div class="achieve-slide"><img src="img/Слайд4.JPG" alt="Фота 4"></div>
+                    <div class="achieve-slide"><img src="img/Слайд5.JPG" alt="Фота 5"></div>
+                    <div class="achieve-slide"><img src="img/Слайд6.JPG" alt="Фота 6"></div>
+                    <div class="achieve-slide"><img src="img/Слайд7.JPG" alt="Фота 7"></div>
+                    <div class="achieve-slide"><img src="img/Слайд8.JPG" alt="Фота 8"></div>
+                </div>
+
+                <button class="achieve-slider-btn prev" id="olympiadPrev" aria-label="Назад">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="achieve-slider-btn next" id="olympiadNext" aria-label="Наперад">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+                <div class="achieve-slider-dots" id="olympiadDots"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ПЛАШКИ (КЛАСНАЕ КІРАЎНІЦТВА) -->
+    <div class="video-modal" id="newModal" style="background-color: rgba(43, 26, 18, 0.9);">
+        <div class="gallery-modal-content" style="max-width: 900px; background-color: #f4efe6; padding: 0; overflow: hidden; display: flex; flex-direction: column; border-radius: 20px;">
+            <button class="close-video" id="closeNewModalBtn" style="top: 15px; right: 15px; z-index: 10;">&times;</button>
+            
+            <!-- Заголовок окна -->
+            <div style="padding: 30px 40px 10px 40px; background-color: #faf7f2; border-bottom: 1px solid #e8dfd1;">
+                <h3 class="modal-title" style="font-size: 2rem; margin: 0; color: #2b1a12; text-align: left;">Класнае кіраўніцтва</h3>
+                <p style="font-family: 'Montserrat', sans-serif; color: #c56a4b; font-weight: 600; margin-top: 5px; margin-bottom: 20px;">Быць педагогам — адначасова і ганарова, і адказна</p>
+            </div>
+
+            <!-- Прокручиваемая область с контентом -->
+            <div style="padding: 30px 40px; overflow-y: auto; max-height: 65vh; scrollbar-width: thin; scrollbar-color: #c56a4b #e8dfd1;">
+                
+                <!-- Вступительный текст -->
+                <div style="font-family: 'Montserrat', sans-serif; font-size: 1rem; color: #55463d; line-height: 1.7; margin-bottom: 30px; text-align: justify;">
+                    <p style="margin-top: 0;">Якой бы ні была цяжкай дзейнасць класнага кіраўніка, бясспрэчна, яна неабходна дзецям, паколькі <strong>клас — асноўнае структурнае звяно ў школе</strong>.</p>
+                    <p>Менавіта тут арганізуецца пазнавальная дзейнасць, фарміруюцца сацыяльныя адносіны паміж вучнямі. У класе клапоцяцца пра сацыяльны дабрабыт дзяцей, вырашаюцца праблемы іх вольнага часу, ажыццяўляецца першаснае згуртаванне калектыву, фарміруецца адпаведная эмацыянальная атмасфера.</p>
+                    <p style="font-weight: 700; color: #c56a4b; font-style: italic;">Як арганізаваць дзяцей, каб яны сябравалі і паважалі адзін аднаго? (30 рэкамендацый для класных кіраўнікоў)</p>
+                </div>
+
+                <!-- СЛАЙДЕР С ФОТОГРАФИЯМИ (32 СЛАЙДА) -->
+                <div class="achieve-slider" id="classSlider" style="max-width: 100%; margin: 0 auto 30px auto; aspect-ratio: 16 / 9; border: 4px solid #faf7f2; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div class="achieve-slider-track" id="classSliderTrack">
+                        <!-- ВСТАВЬТЕ СЮДА СВОИ ФОТОГРАФИИ ВМЕСТО SRC -->
+                        <div class="achieve-slide"><img src="img/class_photo_1.jpg" alt="Фота 1"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_2.jpg" alt="Фота 2"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_3.jpg" alt="Фота 3"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_4.jpg" alt="Фота 4"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_5.jpg" alt="Фота 5"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_6.jpg" alt="Фота 6"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_7.jpg" alt="Фота 7"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_8.jpg" alt="Фота 8"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_9.jpg" alt="Фота 9"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_10.jpg" alt="Фота 10"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_11.jpg" alt="Фота 11"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_12.jpg" alt="Фота 12"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_13.jpg" alt="Фота 13"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_14.jpg" alt="Фота 14"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_15.jpg" alt="Фота 15"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_16.jpg" alt="Фота 16"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_17.jpg" alt="Фота 17"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_18.jpg" alt="Фота 18"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_19.jpg" alt="Фота 19"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_20.jpg" alt="Фота 20"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_21.jpg" alt="Фота 21"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_22.jpg" alt="Фота 22"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_23.jpg" alt="Фота 23"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_24.jpg" alt="Фота 24"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_25.jpg" alt="Фота 25"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_26.jpg" alt="Фота 26"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_27.jpg" alt="Фота 27"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_28.jpg" alt="Фота 28"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_29.jpg" alt="Фота 29"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_30.jpg" alt="Фота 30"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_31.jpg" alt="Фота 31"></div>
+                        <div class="achieve-slide"><img src="img/class_photo_32.jpg" alt="Фота 32"></div>
+                    </div>
+
+                    <button class="achieve-slider-btn prev" id="classPrev" aria-label="Назад">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button class="achieve-slider-btn next" id="classNext" aria-label="Наперад">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                    <div class="achieve-slider-dots" id="classDots"></div>
+                </div>
+
+                <!-- Краткие тезисы -->
+                <div style="background-color: #faf7f2; border-radius: 12px; padding: 25px; border-left: 4px solid #c56a4b;">
+                    <h4 style="font-family: 'Lora', serif; color: #2b1a12; font-size: 1.3rem; margin-top: 0; margin-bottom: 15px;">Галоўныя накірункі работы:</h4>
+                    <ul style="margin: 0; padding-left: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.95rem; color: #55463d; line-height: 1.6;">
+                        <li style="margin-bottom: 8px;"><strong>Агульныя патрабаванні:</strong> стварэнне канкрэтных «законаў» жыцця класа.</li>
+                        <li style="margin-bottom: 8px;"><strong>Сувязь з вучнямі:</strong> стварэнне агульнай групы ў Viber/Telegram, правілы паводзінаў у ёй.</li>
+                        <li style="margin-bottom: 8px;"><strong>Работа з бацькамі:</strong> наведванне сем'яў, бацькоўскія сходы, індывідуальныя бяседы.</li>
+                        <li style="margin-bottom: 8px;"><strong>Мерапрыемствы:</strong> выбар актыву, класныя гадзіны, экскурсіі, паходы, гульнёвыя суботы.</li>
+                        <li style="margin-bottom: 8px;"><strong>Захаванне гісторыі:</strong> стварэнне відэаролікаў, альбомаў і паштовак-пісьмаў.</li>
+                        <li><strong>Галоўнае:</strong> падтрымка і асабістая прысутнасць. <em>«Сіла і перамога — у адзінстве!»</em></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ПЛАШКИ "МЕТАДЫЧНЫЯ РАСПРАЦОЎКІ" -->
+    <div class="video-modal" id="methodicsModal" style="background-color: rgba(43, 26, 18, 0.9);">
+        <div class="gallery-modal-content" style="max-width: 900px; background-color: #f4efe6; padding: 30px;">
+            <button class="close-video" id="closeMethodicsBtn" style="top: 15px; right: 15px;">&times;</button>
+            <h3 class="modal-title" style="font-size: 1.8rem; margin-top: 0; margin-bottom: 20px; text-align: left;">
+                Метадычныя распрацоўкі</h3>
+
+            <div class="articles-list"
+                style="display: flex; flex-direction: column; gap: 15px; max-height: 70vh; overflow-y: auto; padding-right: 10px;">
+                
+                <!-- Файл 1 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Выступленне. Выкарыстанне рознаўзроўневых заданняў</h4>
+                    </div>
+                    <div><a href="files/Выступленне. Выкарыстанне рознаўзроўневых заданняў.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 2 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Выступленне. Рэфлексія як элемент сучаснага ўрока</h4>
+                    </div>
+                    <div><a href="files/Выступленне. Рэфлексія як элемент сучаснага ўрока.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 3 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Круглы стол. Сучасны ўрок ва ўмовах фарміравання функцыянальнай граматнасці</h4>
+                    </div>
+                    <div><a href="files/Круглы стол. Сучасны ўрок ва ўмовах фарміравання функцыянальнай граматнасці.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 4 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Круглый стол. Методы и приемы современного урока</h4>
+                    </div>
+                    <div><a href="files/Круглый стол. Методы и приемы современного урока.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 5 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Лекцыя. Выхаваўчы патэнцыял урока беларускай мовы і літаратуры</h4>
+                    </div>
+                    <div><a href="files/Лекцыя. Выхаваўчы патэнцыял урока беларускай мовы і літаратуры.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 6 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Майстар-клас. Шляхі стварэння здароўезберагальнага асяродку</h4>
+                    </div>
+                    <div><a href="files/Майстар-клас. Шляхі стварэння здароўезберагальнага асяродку.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 7 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Мастер-класс. Имиждж современного педагога</h4>
+                    </div>
+                    <div><a href="files/Мастер-класс. Имиждж современного педагога.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 8 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Методический квест. Путь к успеху</h4>
+                    </div>
+                    <div><a href="files/Методический квест. Путь к успеху.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 9 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Практикум. Рефлексия профессиональной деятельности молодого специалиста</h4>
+                    </div>
+                    <div><a href="files/Практикум. Рефлексия профессиональной деятельности молодого специалиста.docx" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 10 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            Семінар-практыкум. Вучымся пераказваць</h4>
+                    </div>
+                    <div><a href="files/Семінар-практыкум. Вучымся пераказваць, або прыёмы падрыхтоўкі да напісання пераказу.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- НОВОЕ МОДАЛЬНОЕ ОКНО ДЛЯ ПЛАШКИ "ПЛАНЫ-КАНСПЕКТЫ ЎРОКАЎ" -->
+    <div class="video-modal" id="lessonPlansModal" style="background-color: rgba(43, 26, 18, 0.9);">
+        <div class="gallery-modal-content" style="max-width: 900px; background-color: #f4efe6; padding: 30px;">
+            <button class="close-video" id="closeLessonPlansBtn" style="top: 15px; right: 15px;">&times;</button>
+            <h3 class="modal-title" style="font-size: 1.8rem; margin-top: 0; margin-bottom: 20px; text-align: left;">
+                Планы-канспекты ўрокаў</h3>
+
+            <div class="articles-list"
+                style="display: flex; flex-direction: column; gap: 15px; max-height: 70vh; overflow-y: auto; padding-right: 10px;">
+                
+                <!-- Файл 1 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            5 клас. Абагульняльны ўрок. За смугою стагоддзяў</h4>
+                    </div>
+                    <div><a href="files/5 клас. Абагульняльны ўрок. За смугою стагоддзяў.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 2 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            5 клас. Будова сказа. Галоўныя члены сказа</h4>
+                    </div>
+                    <div><a href="files/5 клас. Будова сказа. Галоўныя члены сказа.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 3 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            5 клас. Займеннік. Асабовыя займеннікі, іх змяненне</h4>
+                    </div>
+                    <div><a href="files/5 клас. Займеннік. Асабовыя займеннікі, іх змяненне.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 4 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            5 клас. Тыпы маўлення</h4>
+                    </div>
+                    <div><a href="files/5 клас. Тыпы маўлення.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 5 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            5 клас. Уладзімір Караткевіч. Нямоглы бацька</h4>
+                    </div>
+                    <div><a href="files/5 клас. Уладзімір Караткевіч. Нямоглы бацька.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 6 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            6 клас. Падагульненне па тэме Прыметнік</h4>
+                    </div>
+                    <div><a href="files/6 клас. Падагульненне па тэме Прыметнік.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 7 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            7 клас. Навучальны выбарачны пераказ тэкстаў з дзеепрыслоўямі і дзеепрыслоўнымі зваротамі</h4>
+                    </div>
+                    <div><a href="files/7 клас. Навучальны выбарачны пераказ тэкстаў з дзеепрыслоўямі і дзеепрыслоўнымі зваротамі.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 8 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            9 клас. Кантрольнае сачыненне Мой родны край</h4>
+                    </div>
+                    <div><a href="files/9 клас. Кантрольнае сачыненне Мой родны край.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 9 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            9 клас. Кантрольнае сачыненне. Ці магу я абысціся без інтэрнэта</h4>
+                    </div>
+                    <div><a href="files/9 клас. Кантрольнае сачыненне. Ці магу я абысціся без інтэрнэта.doc" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+                <!-- Файл 10 -->
+                <div class="article-item" style="background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h4 style="margin: 0 0 5px 0; font-family: 'Lora', serif; color: #2b1a12; font-size: 1.1rem;">
+                            11 клас. Кантрольнае сачыненне-разважанне на грамадзянска-патрыятычную тэму</h4>
+                    </div>
+                    <div><a href="files/11 клас. Кантрольнае сачыненне-разважанне на грамадзянска-патрыятычную тэму.docx" download class="btn-download" style="padding: 8px 16px; text-decoration: none;">Спампаваць</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- УСПЛЫВАЮЧАЕ АКНО ПАВЕРХ ГАЛЕРЭІ: ПРАГЛЯД АДНАГО ВІДЭА -->
+    <div class="video-modal video-player-overlay" id="videoPlayerModal">
+        <div class="video-modal-content">
+            <button class="close-video" id="closeVideoPlayerBtn">&times;</button>
+            <div class="video-wrapper" id="videoContainer">
+                <!-- Iframe будзе ўстаўляцца праз JS -->
+            </div>
+            <h3 class="modal-title" id="videoPlayerTitle"></h3>
+        </div>
+    </div>
+
+    <!-- Падключэнне знешняга скрыпта -->
+    <script src="script.js"></script>
+</body>
+
+</html>

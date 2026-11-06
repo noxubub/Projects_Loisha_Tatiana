@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="be">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпускнікі</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top">
+        <div class="name">
+            <a href="index.html" class="brand-link">
+                <div class="brand">
+                    <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c56a4b" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z">
+                            </path>
+                            <line x1="6" y1="17" x2="18" y2="17"></line>
+                        </svg>
+                    </div>
+                    <div class="title-block">
+                        <h1 class="main-title">Педагагічная <span class="red">кухня</span></h1>
+                        <p class="subtitle">шэф-повар — Лойша Таццяна Віктараўна</p>
+                    </div>
+                </div>
+            </a>
+
+            <nav class="links">
+                <a href="index.html">Галоўная</a>
+                <a href="biography.html">Біяграфія</a>
+                <a href="achieve.html">Дасягненні</a>
+                <a href="nakirunki.html">Шэф-повар унiверсал</a>
+                <a href="students.html" class="active">Гонар шэф-повара</a>
+                <a href="library.html">Палiцы рэцэптаў</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="students-main">
+        <div class="bio-header">
+            <h1 class="bio-title">Ганаровая галерэя</h1>
+            <div class="bio-intro">
+                <p>Самыя ганаровыя пазіцыі меню гэтай кухні — выпускнікі i пераможцы конкурсаў: «стравы высокай кухні»
+                    (алімпіяднікі), бездакорная
+                    класіка (высокабальнікі) і аўтарскія дэсерты (лаўрэаты творчых конкурсаў). Навядзіце на картку
+                    — даведаецеся гісторыю перамогі.</p>
+            </div>
+        </div>
+
+        <!-- Кнопкі фільтрацыі -->
+        <!-- <div class="filter-buttons" style="justify-content: center; margin-bottom: 3rem;">
+            <button class="filter-btn active" data-filter="all">Усе</button>
+            <button class="filter-btn" data-filter="olympiad">Алімпіяднікі</button>
+            <button class="filter-btn" data-filter="laureate">Лаўрэаты конкурсаў</button>
+        </div> -->
+
+        <!-- Сетка выпускнікоў -->
+        <div class="students-grid">
+
+            <!-- Картка 1: Губко Мілана -->
+            <div class="student-card-wrap" data-type="laureate">
+                <div class="student-card-inner">
+                    <div class="student-card-front" style="background-image: url('img/1_1.jpg');">
+                        <div class="front-overlay"></div>
+                        <div class="front-content">
+                            <h3 class="student-name" style="color: white;">Губко Мілана</h3>
+                            <span class="student-year" style="background-color: #c56a4b; color: white;">Выпускніца
+                                2026</span>
+                        </div>
+                    </div>
+                    <div class="student-card-back">
+                        <h3 class="back-title">Дасягненні</h3>
+                        <div class="back-scroll">
+                            <p class="back-text">
+                                Пераможца абласнога конкурсу «Лишь слову жизнь дана» (2024 год і 2026 год, дыплом III
+                                ступені), XVI абласнога конкурсу навукова-даследчых работ (канферэнцыя) навучэнцаў па
+                                вучэбных прадметах «Крыштальная Альфа» (2024 год, дыплом III ступені), гарадскога
+                                конкурсу «Нёманскія вытокі» (2024 год і 2026 год, дыпломы II ступені), раённага конкурсу
+                                навукова-даследчых работ «Свет навукі: інтэлект, творчасць, культура» (2024 год, 2025
+                                год, дыпломы II і III ступені), абласных адкрытых адукацыйных Каложскіх чытаннях (2025
+                                год, дыплом II ступені), міжнароднага конкурсу сачыненняў «Настаўнік у маім лёсе» (2025
+                                год, сертыфікат), рэспубліканскага літаратурнага конкурсу «БрамаМар» (2025 год,
+                                сертыфікат), міжнароднага фестывалю «Любай маме прысвячаецца» (2025 год, сертыфікат),
+                                III гарадскога фестывалю рыторыкі ў завочным конкурсе відэаролікаў «Жанчына, якой я
+                                захапляюся» (2026 год, дыплом II ступені), VIII адкрытага гарадскога фестывалю
+                                «Культурны воблік горада», завочнага конкурсу артыкулаў-інтэрв'ю «Год беларускай
+                                жанчыны: гісторыі і погляды» (2026 год, дыплом II ступені).
+                            </p>
+                            <p class="back-text">
+                                Занесена на школьную Дошку гонару ў 2023-2025 гг. Стыпендыят Гродзенскага абласнога
+                                аддзялення грамадскага аб'яднання «Беларускі фонд міру» (27.05.2026 г.).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Картка 2: Курмель Кацярына -->
+            <div class="student-card-wrap" data-type="laureate">
+                <div class="student-card-inner">
+                    <div class="student-card-front" style="background-image: url('img/2_2.jpg');">
+                        <div class="front-overlay"></div>
+                        <div class="front-content">
+                            <h3 class="student-name" style="color: white;">Курмель Кацярына</h3>
+                            <span class="student-year" style="background-color: #7a8b60; color: white;">Выпускніца
+                                2026</span>
+                        </div>
+                    </div>
+                    <div class="student-card-back">
+                        <h3 class="back-title">Дасягненні</h3>
+                        <div class="back-scroll">
+                            <p class="back-text">
+                                З'яўляецца пераможцам і прызёрам розных фестываляў, конкурсаў і іншых мерапрыемстваў:
+                                абласны конкурс «Лишь Слову жизнь дана...» (2024 год, дыплом III ступені); IV гарадскі
+                                фестываль «Культурны воблік горада» (2024 год, дыплом I ступені); творчы конкурс эсэ
+                                «Пока мы едины, мы непобедимы...» у рамках 1-й міжнароднай адкрытай краязнаўчай
+                                канферэнцыі «Память жива в сердцах...» (2024 год, дыплом III ступені); раённы этап
+                                рэспубліканскага конкурсу сачыненняў эпісталярнага жанру (2024 год, дыплом III ступені);
+                                міжнародны конкурс сачыненняў «Настаўнік у маім лёсе» (2025 год, сертыфікат);
+                                рэспубліканскі літаратурны конкурс «БрамаМар» (2025 год, сертыфікат); раённы этап
+                                рэспубліканскага конкурсу юных чытачоў «Жывая класіка» (2025 год, дыплом III ступені);
+                                адкрыты гарадскі конкурс «Гонар нацыі» (2025 год, дыплом III ступені); Міжнародны
+                                літаратурны конкурс «Это нужно -- не мёртвым! Это надо -- живым!» (2025 год, грамата);
+                                рэспубліканскі конкурс навукова-даследчых работ «Васількоў шапатліваю моваю...» (2025
+                                год, дыплом I ступені).
+                            </p>
+                            <p class="back-text">
+                                Занесена на школьную Дошку гонару ў 2024-2025 гг.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Картка 3: Лойша Паліна -->
+            <div class="student-card-wrap" data-type="olympiad">
+                <div class="student-card-inner">
+                    <div class="student-card-front" style="background-image: url('img/3_3.jpg');">
+                        <div class="front-overlay"></div>
+                        <div class="front-content">
+                            <h3 class="student-name" style="color: white;">Лойша Паліна</h3>
+                            <span class="student-year" style="background-color: #d4b676; color: white;">10 «В»
+                                клас</span>
+                        </div>
+                    </div>
+                    <div class="student-card-back">
+                        <h3 class="back-title">Дасягненні</h3>
+                        <div class="back-scroll">
+                            <p class="back-text">
+                                Выдатніца і прызёр прадметных алімпіяд, абласных, рэспубліканскіх і міжнародных
+                                конкурсаў. Сярод яе перамог -- дыплом IІ ступені абласной алімпіяды па беларускай мове і
+                                літаратуры (2026 г.), дыплом IІІ ступені раённай алімпіяды па беларускай мове і
+                                літаратуры (2025 г.), дыплом I ступені абласнога конкурсу «Лишь Слову жизнь дана» (2026
+                                г.), дыплом ІІ ступені рэспубліканскага конкурсу «Імёны, здабытыя талентам» (2025 г.),
+                                дыплом ІІІ ступені міжнароднага конкурсу «БлагоВест» (2025 г.), дыплом ІІ ступені
+                                раённага конкурсу «Соблюдаем законы дорог» (2025 г.), дыплом ІІ ступені раённага этапу
+                                рэспубліканскага конкурсу «Открываем Беларусь» (2026 г.), дыплом І ступені раённага
+                                этапу рэспубліканскага конкурсу «Ад паэзіі сэрца да прозы душы» (2026 г.).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Картка 4: Пудакевіч Анастасія -->
+            <div class="student-card-wrap" data-type="olympiad">
+                <div class="student-card-inner">
+                    <div class="student-card-front" style="background-image: url('img/4_4.jpg');">
+                        <div class="front-overlay"></div>
+                        <div class="front-content">
+                            <h3 class="student-name" style="color: white;">Пудакевіч Анастасія</h3>
+                            <span class="student-year" style="background-color: #8c7765; color: white;">8 «Б»
+                                клас</span>
+                        </div>
+                    </div>
+                    <div class="student-card-back">
+                        <h3 class="back-title">Дасягненні</h3>
+                        <div class="back-scroll">
+                            <p class="back-text">
+                                Выдатніца і прызёр алімпіяд па беларускай мове і літаратуры сярод вучняў ІІ ступені
+                                агульнай сярэдняй адукацыі. Сярод яе перамог --- дыпломы I ступені раённай алімпіяды па
+                                беларускай мове і літаратуры ў 2024-2026 гг.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Картка 5: Чабатар Кацярына -->
+            <div class="student-card-wrap" data-type="laureate">
+                <div class="student-card-inner">
+                    <div class="student-card-front card-front-chabatar" style="background-image: url('img/5_5.jpg');">
+                        <div class="front-overlay"></div>
+                        <div class="front-content">
+                            <h3 class="student-name" style="color: white;">Чабатар Кацярына</h3>
+                            <span class="student-year" style="background-color: #9b6653; color: white;">Выпускніца
+                                2026</span>
+                        </div>
+                    </div>
+                    <div class="student-card-back">
+                        <h3 class="back-title">Дасягненні</h3>
+                        <div class="back-scroll">
+                            <p class="back-text">
+                                Пераможца абласнога конкурсу «Лишь слову жизнь дана» (2025 год, дыплом III ступені);
+                                удзельнік раённага этапу «Вялікай моладзевай гульні». Занесена на школьную Дошку гонару
+                                ў 2024-2025 гг.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Картка 6: Янушка Ева -->
+            <div class="student-card-wrap" data-type="laureate">
+                <div class="student-card-inner">
+                    <div class="student-card-front" style="background-image: url('img/6_6.jpg');">
+                        <div class="front-overlay"></div>
+                        <div class="front-content">
+                            <h3 class="student-name" style="color: white;">Янушка Ева</h3>
+                            <span class="student-year" style="background-color: #647553; color: white;">Выпускніца
+                                2026</span>
+                        </div>
+                    </div>
+                    <div class="student-card-back">
+                        <h3 class="back-title">Дасягненні</h3>
+                        <div class="back-scroll">
+                            <p class="back-text">
+                                Пераможца раённага этапу рэспубліканскага конкурсу «Лідар года» (2025 год, дыплом II
+                                ступені), абласнога конкурсу «Лишь слову жизнь дана» (2025 год, дыплом III ступені),
+                                абласнога конкурсу «Я -- заканадаўца» (2025 год, сертыфікат). Мае падзяку за асабісты
+                                ўклад, падтрымку моладзевага руху і актыўны ўдзел у рэалізацыі праектаў «БРСМ», актыўную
+                                жыццёвую пазіцыю, індывідуальнасць і творчы падыход да справы. Занесена на школьную
+                                Дошку гонару ў 2025 г.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="be">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дасягненні — Педагагічная кухня</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <!-- Шапка -->
+        <header class="top">
+            <div class="name">
+                <a href="index.html" class="brand-link">
+                    <div class="brand">
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c56a4b"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z">
+                                </path>
+                                <line x1="6" y1="17" x2="18" y2="17"></line>
+                            </svg>
+                        </div>
+                        <div class="title-block">
+                            <h1 class="main-title">Педагагічная <span class="red">кухня</span></h1>
+                            <p class="subtitle">шэф-повар — Лойша Таццяна Віктараўна</p>
+                        </div>
+                    </div>
+                </a>
+
+                <nav class="links">
+                    <a href="index.html">Галоўная</a>
+                    <a href="biography.html">Біяграфія</a>
+                    <a href="achieve.html" class="active">Дасягненні</a>
+                    <a href="nakirunki.html">Шэф-повар унiверсал</a>
+                    <a href="students.html">Гонар шэф-повара</a>
+                    <a href="library.html">Палiцы рэцэптаў</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="achieve-main">
+
+            <!-- Левая калонка -->
+            <div class="achieve-left">
+                <div class="bio-header" style="text-align: left; margin-bottom: 2rem;">
+                    <h1 class="bio-title">Рэцэпты поспеху "крок за крокам"</h1>
+                    <div class="bio-intro">
+                        <p>Фірменны рэцэпт гэтай кухні — рэцэпт поспеху. Крок за крокам: адточанае майстэрства (конкурсы і
+                            выставы) і зоркі на паліцы (узнагароды) — з 2010 года. Націсніце на крок — шэф раскрые
+                            падрабязнасці.</p>
+                    </div>
+                </div>
+
+                <!-- Кнопкі фільтрацыі -->
+                <!-- <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Усе крокі</button>
+                    <button class="filter-btn" data-filter="award">Зоркі · узнагароды</button>
+                    <button class="filter-btn" data-filter="contest">Майстэрства · конкурсы</button>
+                </div> -->
+
+                <!-- Кнопка адкрыцця галерэі ўзнагарод -->
+                <button class="achieve-open-btn" id="openAchieveGallery">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="6"></circle>
+                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                    </svg>
+                    Паглядзець узнагароды Таццяны Віктараўны
+                </button>
+            </div>
+
+            <!-- Правая калонка (Таймлайн) -->
+            <div class="achieve-right">
+
+                <!-- Лініі для анімацыі -->
+                <div class="timeline-line-bg"></div>
+                <div class="timeline-line-active"></div>
+
+                <div class="vertical-timeline">
+
+                    <!-- 2013 -->
+                    <div class="vt-item" data-type="award">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2013</span>
+                                <span class="vt-tag">УЗНАГАРОДА</span>
+                            </div>
+                            <h3 class="vt-title">Ганаровая грамата аддзела адукацыі Ленінскага раёна</h3>
+                            <p class="vt-text">Ганаровая грамата аддзела адукацыі, спорту і турызму адміністрацыі
+                                Ленінскага раёна г. Гродна.</p>
+                            <div class="vt-extra-text">
+                                <p>Першая зорка на паліцы: раённае ўпраўленне адукацыі паспрабавала «страву» маладога
+                                    педагога і пакінула першы захапляльны водгук.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2016 -->
+                    <div class="vt-item" data-type="award">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2016</span>
+                                <span class="vt-tag">УЗНАГАРОДА</span>
+                            </div>
+                            <h3 class="vt-title">Грамата выдавецтва «Адукацыя і выхаванне»</h3>
+                            <p class="vt-text">Грамата выдавецтва «Адукацыя і выхаванне» — прызнанне метадычных
+                                публікацый.</p>
+                            <div class="vt-extra-text">
+                                <p>Выдавецтва, якое выпускае асноўныя педагагічныя часопісы Беларусі, адзначыла ўклад
+                                    шэфа ў агульную «кухарскую кнігу» прадмета.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2017 (Конкурс) -->
+                    <div class="vt-item" data-type="contest">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2017</span>
+                                <span class="vt-tag">КОНКУРС</span>
+                            </div>
+                            <h3 class="vt-title">«Настаўнік года Рэспублікі Беларусь» — перамога</h3>
+                            <p class="vt-text">Дыплом I ступені пераможцы раённага этапу рэспубліканскага конкурсу
+                                прафесійнага майстэрства педагагічных работнікаў.</p>
+                            <div class="vt-extra-text">
+                                <p>Галоўны конкурс педагогаў краіны пачынаецца з раённага этапу — і тут Таццяна
+                                    Віктараўна даказала, што яе «кухня» гатуе на самым высокім узроўні: першае месца і
+                                    Дыплом I ступені.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2017 (Узнагарода) -->
+                    <div class="vt-item" data-type="award">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2017</span>
+                                <span class="vt-tag">УЗНАГАРОДА</span>
+                            </div>
+                            <h3 class="vt-title">Ганаровая грамата аддзела адукацыі Ленінскага раёна</h3>
+                            <p class="vt-text">Ганаровая грамата аддзела адукацыі, спорту і турызму адміністрацыі
+                                Ленінскага раёна г. Гродна.</p>
+                            <div class="vt-extra-text">
+                                <p>Чарговае прызнанне заслуг педагога на раённым узроўні. Праца настаўніка была высока ацэнена кіраўніцтвам.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2018 -->
+                    <div class="vt-item" data-type="contest">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2018</span>
+                                <span class="vt-tag">КОНКУРС</span>
+                            </div>
+                            <h3 class="vt-title">«Тут родныя трымаюць карані»</h3>
+                            <p class="vt-text">Дыплом ІІІ ступені ў рэспубліканскім конкурсе творчых работ.</p>
+                            <div class="vt-extra-text">
+                                <p>Конкурс, прысвечаны роднаму краю і роднаму слову, — блізкая педагогу тэма: карані
+                                    нацыянальнай культуры сталі адным з галоўных «інгрэдыентаў» яе ўрокаў.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2019 (Выстава) -->
+                    <div class="vt-item" data-type="contest">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2019</span>
+                                <span class="vt-tag">ВЫСТАВА</span>
+                            </div>
+                            <h3 class="vt-title">XVIII Рэспубліканская выстава метадычнай літаратуры</h3>
+                            <p class="vt-text">Дыплом II ступені XVIII рэспубліканскай выставы навукова-метадычнай
+                                літаратуры, педагагічнага вопыту і творчасці.</p>
+                            <div class="vt-extra-text">
+                                <p>Рэспубліканская выстава — вітрына лепшага педагагічнага вопыту краіны. Дыплом II
+                                    ступені пацвярджае: рэцэпты шэфа заказваюць і за межамі роднай школы.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2019 (Узнагарода) -->
+                    <div class="vt-item" data-type="award">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2019</span>
+                                <span class="vt-tag">УЗНАГАРОДА</span>
+                            </div>
+                            <h3 class="vt-title">Ганаровая грамата Гродзенскага гарвыканкама</h3>
+                            <p class="vt-text">Ганаровая грамата аддзела адукацыі Гродзенскага гарадскога выканаўчага камітэта.</p>
+                            <div class="vt-extra-text">
+                                <p>Гарадскі ўзровень прызнання. Адміністрацыя горада адзначыла ўклад педагога ў развіццё адукацыі.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2019 (Конкурс) -->
+                    <div class="vt-item" data-type="contest">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2019</span>
+                                <span class="vt-tag">КОНКУРС</span>
+                            </div>
+                            <h3 class="vt-title">Пераможца конкурсу ад выдавецтва «Аверсэв»</h3>
+                            <p class="vt-text">Пераможца адкрытага конкурсу педагагічнага майстэрства ад выдавецтва «Аверсэв».</p>
+                            <div class="vt-extra-text">
+                                <p>Прызнанне ад вядучага выдавецтва вучэбнай літаратуры. Конкурс сабраў лепшых педагогаў краіны.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2023 -->
+                    <div class="vt-item" data-type="award">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2023</span>
+                                <span class="vt-tag">УЗНАГАРОДА</span>
+                            </div>
+                            <h3 class="vt-title">Ганаровая грамата Гродзенскага гарвыканкама</h3>
+                            <p class="vt-text">Ганаровая грамата аддзела адукацыі Гродзенскага гарадскога выканаўчага камітэта.</p>
+                            <div class="vt-extra-text">
+                                <p>Паўторнае прызнанне на гарадскім узроўні пацвярджае стабільна высокі ўзровень працы педагога.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2025 -->
+                    <div class="vt-item" data-type="award">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2025</span>
+                                <span class="vt-tag">УЗНАГАРОДА</span>
+                            </div>
+                            <h3 class="vt-title">Грамата галоўнага ўпраўлення адукацыі Гродзенскага аблвыканкама</h3>
+                            <p class="vt-text">Грамата галоўнага ўпраўлення адукацыі Гродзенскага абласнога выканаўчага камітэта.</p>
+                            <div class="vt-extra-text">
+                                <p>Абласны ўзровень — высокае прызнанне прафесіяналізму і значнага ўкладу ў развіццё сістэмы адукацыі рэгіёна.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2026 -->
+                    <div class="vt-item" data-type="award">
+                        <div class="vt-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#faf7f2"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <div class="vt-card">
+                            <div class="vt-header">
+                                <span class="vt-year">2026</span>
+                                <span class="vt-tag">ПАДЗЯКА</span>
+                            </div>
+                            <h3 class="vt-title">Падзячнае пісьмо Гродзенскага абласнога савета дэпутатаў</h3>
+                            <p class="vt-text">Падзячнае пісьмо Гродзенскага абласнога савета дэпутатаў.</p>
+                            <div class="vt-extra-text">
+                                <p>Высокая ацэнка на ўзроўні абласнога заканадаўчага органа. Сведчанне прызнання шматгадовай добрасумленнай працы і прафесіяналізму.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Кнопка «Наверх» -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- МАДАЛЬНАЕ АКНО: ГАЛЕРЭЯ ЎЗНАГАРОД -->
+    <div class="achieve-modal" id="achieveModal">
+        <div class="achieve-modal-content">
+            <button class="achieve-modal-close" id="closeAchieveGallery" aria-label="Закрыць">&times;</button>
+
+            <div class="achieve-slider" id="achieveSlider">
+                <div class="achieve-slider-track" id="achieveSliderTrack">
+                    <div class="achieve-slide"><img src="img/1d.jpg" alt="Дасягненне 1"></div>
+                    <div class="achieve-slide"><img src="img/2d.jpg" alt="Дасягненне 2"></div>
+                    <div class="achieve-slide"><img src="img/3d.jpg" alt="Дасягненне 3"></div>
+                    <div class="achieve-slide"><img src="img/4d.jpg" alt="Дасягненне 4"></div>
+                    <div class="achieve-slide"><img src="img/5d.jpg" alt="Дасягненне 5"></div>
+                    <div class="achieve-slide"><img src="img/6d.jpg" alt="Дасягненне 6"></div>
+                    <div class="achieve-slide"><img src="img/7d.jpg" alt="Дасягненне 7"></div>
+                    <div class="achieve-slide"><img src="img/8d.jpg" alt="Дасягненне 8"></div>
+                    <div class="achieve-slide"><img src="img/9d.jpg" alt="Дасягненне 9"></div>
+                    <div class="achieve-slide"><img src="img/10d.jpg" alt="Дасягненне 10"></div>
+                    <div class="achieve-slide"><img src="img/11d.jpg" alt="Дасягненне 11"></div>
+                    <div class="achieve-slide"><img src="img/12d.jpg" alt="Дасягненне 12"></div>
+                    <div class="achieve-slide"><img src="img/13d.jpg" alt="Дасягненне 13"></div>
+                    <div class="achieve-slide"><img src="img/14d.jpg" alt="Дасягненне 14"></div>
+                    <div class="achieve-slide"><img src="img/15d.jpg" alt="Дасягненне 15"></div>
+                </div>
+
+                <button class="achieve-slider-btn prev" id="achievePrev" aria-label="Назад">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <button class="achieve-slider-btn next" id="achieveNext" aria-label="Уперад">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+
+                <div class="achieve-slider-dots" id="achieveDots"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Падключаем скрыпт (асноўны) -->
+    <script src="script.js"></script>
+
+    <!-- Скрыпт для анімацыі лініі і кнопкі «Наверх» -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // === АНІМАЦЫЯ ЛІНІІ ПРЫ СКРОЛЕ ===
+            const lineActive = document.querySelector('.timeline-line-active');
+            const rightColumn = document.querySelector('.achieve-right');
+
+            if (lineActive && rightColumn) {
+                function updateLine() {
+                    const rect = rightColumn.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+
+                    const startPoint = rect.top + 20;
+                    const endPoint = rect.bottom - 20;
+                    const screenCenter = windowHeight / 2;
+
+                    let heightPx = screenCenter - startPoint;
+                    const maxLength = endPoint - startPoint;
+
+                    if (heightPx < 0) heightPx = 0;
+                    if (heightPx > maxLength) heightPx = maxLength;
+
+                    const percent = (heightPx / maxLength) * 100;
+                    lineActive.style.height = percent + '%';
+                }
+
+                window.addEventListener('scroll', updateLine);
+                window.addEventListener('resize', updateLine);
+                updateLine();
+            }
+
+            // === КНОПКА «НАВЕРХ» ===
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            if (scrollTopBtn) {
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 300) {
+                        scrollTopBtn.style.opacity = '1';
+                        scrollTopBtn.style.pointerEvents = 'auto';
+                    } else {
+                        scrollTopBtn.style.opacity = '0';
+                        scrollTopBtn.style.pointerEvents = 'none';
+                    }
+                });
+
+                scrollTopBtn.addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
