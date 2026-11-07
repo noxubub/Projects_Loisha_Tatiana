@@ -7376,3 +7376,41 @@ main img {
     max-width: 400px;
     margin: 0 auto;
 }
+
+/* ========================================== */
+/* ВЫПРАЎЛЕННЕ РАСЦЯГВАННЯ ФОТА Ў БІЯГРАФІІ */
+/* ========================================== */
+
+/* 1. Агульнае правіла для кантэйнера з фота (каб ён меў фіксаваныя памеры) */
+.biography-photo-wrap,
+.bio-image-container,
+.photo-frame {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Пастаўце патрэбную вышыню, напрыклад 400px або 500px */
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #f3ded6; /* Колер вашай ружовай рамкі */
+}
+
+/* 2. Галоўнае правіла для самога фота */
+.biography-photo-wrap img,
+.bio-image-container img,
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Вось гэта прымушае фота запоўніць увесь блок */
+    object-position: center; /* Цэнтруе фота */
+    display: block;
+    /* Калі ў вас ёсць белая рамка вакол фота, пакіньце гэты радок, калі не - выдаліце */
+    /* border: 4px solid #fff; */ 
+    /* border-radius: 15px; */
+}
+
+/* 3. На выпадак, калі фота знаходзіцца ўнутры нейкага іншага класа */
+img.teacher,
+img.bio-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
