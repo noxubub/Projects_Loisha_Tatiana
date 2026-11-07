@@ -7503,3 +7503,108 @@ img.bio-img {
         font-size: 22px !important;
     }
 }
+
+/* ========================================== */
+/* ЖОРСТКАЯ ФІКСАЦЫЯ ДЛЯ МАБІЛЬНЫХ (Галоўная і Біяграфія) */
+/* ========================================== */
+
+@media (max-width: 768px) {
+
+    /* 1. Забараняем гарызантальны скрол і адключаем маштабаванне */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* 2. Галоўны кантэйнер сайта */
+    .box {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 3. Шапка і меню */
+    .top {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+    .name {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+    .links {
+        display: flex !important;
+        flex-wrap: wrap !important; /* Дазваляем пунктам меню пераносіцца */
+        justify-content: center !important;
+        gap: 8px !important;
+        margin-top: 15px !important;
+    }
+    .links a {
+        font-size: 13px !important;
+        padding: 6px 12px !important;
+    }
+
+    /* 4. ВЫПРАЎЛЕННЕ ФОТА (Галоўная праблема) */
+    /* Гэтыя правілы прымусяць фота на першых старонках быць вялікімі */
+    main img, 
+    .biography-main img, 
+    .home-main img,
+    .photo-wrap img,
+    .biography-photo img {
+        width: 100% !important; /* Фота на ўсю шырыню кантэйнера */
+        max-width: 100% !important;
+        height: auto !important; /* Каб не плюшчылася */
+        min-height: 250px !important; /* Мінімальная вышыня, каб не было палоскі */
+        object-fit: cover !important; /* Запоўніць блок */
+        display: block !important;
+        margin: 0 auto 20px auto !important;
+    }
+
+    /* 5. Калі фота знаходзіцца ў нейкім блоку з рамкай */
+    .biography-photo-wrap,
+    .photo-frame,
+    .bio-image-container {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 300px !important;
+        margin: 0 auto 20px auto !important;
+    }
+
+    /* 6. Каб усе блокі з тэкстам і фота сталі ў адзін слупок */
+    .biography-layout,
+    .bio-flex,
+    .main-content,
+    .content-wrapper {
+        display: flex !important;
+        flex-direction: column !important; /* Фота зверху, тэкст знізу */
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    /* 7. Тэкст */
+    p, .text, .bio-text, .card-desc {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        text-align: left !important;
+        width: 100% !important;
+        word-wrap: break-word !important; /* Каб доўгія словы пераносіліся */
+    }
+
+    /* 8. Загалоўкі */
+    h1, .main-title, .nakirunki-title {
+        font-size: 26px !important;
+        text-align: center !important;
+        line-height: 1.3 !important;
+    }
+    h2, h3 {
+        font-size: 20px !important;
+    }
+}
