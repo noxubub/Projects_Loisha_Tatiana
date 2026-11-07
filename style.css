@@ -7414,3 +7414,92 @@ img.bio-img {
     height: 100% !important;
     object-fit: cover !important;
 }
+
+/* ========================================== */
+/* АДАПТЫЎНАСЦЬ ДЛЯ МАБІЛЬНЫХ (Галоўная і Біяграфія) */
+/* ========================================== */
+
+@media (max-width: 768px) {
+
+    /* 1. Агульныя налады */
+    body {
+        overflow-x: hidden; /* Забараняем гарызантальны скрол */
+    }
+
+    .box {
+        padding: 10px !important; /* Паменшыць водступы ўсяго сайта */
+    }
+
+    /* 2. Шапка і меню */
+    .top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .name {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap; /* Дазваляем пунктам меню пераносіцца на новы радок */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .links a {
+        font-size: 14px; /* Паменшыць шрыфт у меню */
+        padding: 5px 10px;
+    }
+
+    /* 3. Блокі з тэкстам і фота (Біяграфія) */
+    /* Калі ў вас ёсць кантэйнер, дзе фота і тэкст стаяць побач */
+    .biography-container, 
+    .bio-content, 
+    .main-wrapper { /* Замяніце на вашыя класы, калі яны іншыя */
+        display: flex;
+        flex-direction: column; /* Ставім фота над тэкстам */
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* 4. Фота (каб не былі маленькімі) */
+    /* Калі ў вас ёсць фота ў блоку з рамкай (як на скрыншоце) */
+    .biography-photo-wrap,
+    .photo-frame,
+    .bio-image-container {
+        width: 100% !important; /* Фота на ўсю шырыню */
+        height: auto !important; /* Вышыня падладжваецца пад фота */
+        max-height: 400px; /* Абмяжоўваем максімальную вышыню */
+    }
+
+    .biography-photo-wrap img,
+    .photo-frame img,
+    .bio-image-container img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    /* 5. Тэкставыя блокі */
+    .text-block, 
+    .bio-text,
+    p {
+        font-size: 16px; /* Каб тэкст быў чытэльным */
+        line-height: 1.6;
+        text-align: left;
+        width: 100%;
+    }
+
+    /* 6. Загалоўкі */
+    h1 {
+        font-size: 28px !important; /* Паменшыць вялікія загалоўкі */
+    }
+    h2 {
+        font-size: 22px !important;
+    }
+}
